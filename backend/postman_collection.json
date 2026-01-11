@@ -1,0 +1,361 @@
+{
+  "info": {
+    "name": "LinkedIn Saved Posts Analyzer",
+    "description": "API collection for LinkedIn Saved Posts Analyzer endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Popular Authors",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:{{port}}/popular_authors?user_id=user_123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "popular_authors"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "user_123",
+              "description": "User ID to get popular authors for"
+            }
+          ]
+        },
+        "description": "Get list of popular authors with their post counts"
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:{{port}}/popular_authors?user_id=user_123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "popular_authors"
+              ],
+              "query": [
+                {
+                  "key": "user_id",
+                  "value": "user_123"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "body": "[\n  {\n    \"author\": \"Alice\",\n    \"post_count\": 5\n  },\n  {\n    \"author\": \"Bob\",\n    \"post_count\": 3\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Search Posts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:{{port}}/search?query=python&user_id=user_123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "search"
+          ],
+          "query": [
+            {
+              "key": "query",
+              "value": "python",
+              "description": "Search query string"
+            },
+            {
+              "key": "user_id",
+              "value": "user_123",
+              "description": "User ID performing the search"
+            }
+          ]
+        },
+        "description": "Search posts by query string; now includes user_id"
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:{{port}}/search?query=python&user_id=user_123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "query",
+                  "value": "python"
+                },
+                {
+                  "key": "user_id",
+                  "value": "user_123"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "body": "[\n  \"post_1\",\n  \"post_2\",\n  \"post_3\"\n]"
+        }
+      ]
+    },
+    {
+      "name": "Compute Projection",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:{{port}}/projection?user_id=user_123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "projection"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "user_123",
+              "description": "User ID to compute projection for"
+            }
+          ]
+        },
+        "description": "Compute 2D projection of posts"
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:{{port}}/projection?user_id=user_123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "projection"
+              ],
+              "query": [
+                {
+                  "key": "user_id",
+                  "value": "user_123"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "body": "[\n  {\n    \"post_id\": \"post_1\",\n    \"x\": 0.123,\n    \"y\": 0.456,\n    \"keywords\": [\n      {\n        \"keyword\": \"python\",\n        \"score\": 0.85\n      }\n    ]\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Word Cloud",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:{{port}}/wordcloud?user_id=user_123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "wordcloud"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "user_123",
+              "description": "User ID to generate word cloud for"
+            }
+          ]
+        },
+        "description": "Generate word cloud from posts"
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:{{port}}/wordcloud?user_id=user_123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "wordcloud"
+              ],
+              "query": [
+                {
+                  "key": "user_id",
+                  "value": "user_123"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "body": "{\"word\": 1, \"cloud\": 2}"
+        }
+      ]
+    },
+    {
+      "name": "Save Posts",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n  {\n    \"id\": \"post_1\",\n    \"userId\": \"user_123\",\n    \"author\": \"John Doe\",\n    \"authorImage\": \"https://example.com/image.jpg\",\n    \"authorHeadline\": \"Software Engineer\",\n    \"timestamp\": \"2024-01-03T12:00:00Z\",\n    \"text\": \"This is a sample post about Python programming.\",\n    \"postImage\": \"https://example.com/post.jpg\"\n  },\n  {\n    \"id\": \"post_2\",\n    \"userId\": \"user_123\",\n    \"author\": \"Jane Smith\",\n    \"authorImage\": \"https://example.com/image2.jpg\",\n    \"authorHeadline\": \"Data Scientist\",\n    \"timestamp\": \"2024-01-02T10:00:00Z\",\n    \"text\": \"Machine learning insights and best practices.\",\n    \"postImage\": \"https://example.com/post2.jpg\"\n  },\n  {\n    \"id\": \"post_3\",\n    \"userId\": \"user_123\",\n    \"author\": \"Alice Johnson\",\n    \"authorImage\": \"https://example.com/image3.jpg\",\n    \"authorHeadline\": \"AI Researcher\",\n    \"timestamp\": \"2024-01-01T14:30:00Z\",\n    \"text\": \"Deep learning trends and future directions in artificial intelligence.\",\n    \"postImage\": \"https://example.com/post3.jpg\"\n  }\n]"
+        },
+        "url": {
+          "raw": "http://localhost:{{port}}/posts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "posts"
+          ]
+        },
+        "description": "Save posts to the system"
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"id\": \"post_1\",\n    \"userId\": \"user_123\",\n    \"author\": \"John Doe\",\n    \"authorImage\": \"https://example.com/image.jpg\",\n    \"authorHeadline\": \"Software Engineer\",\n    \"timestamp\": \"2024-01-03T12:00:00Z\",\n    \"text\": \"This is a sample post about Python programming.\",\n    \"postImage\": \"https://example.com/post.jpg\"\n  }\n]"
+            },
+            "url": {
+              "raw": "http://localhost:{{port}}/posts",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "posts"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "body": "[\n  {\n    \"id\": \"post_1\",\n    \"userId\": \"user_123\",\n    \"author\": \"John Doe\",\n    \"authorImage\": \"https://example.com/image.jpg\",\n    \"authorHeadline\": \"Software Engineer\",\n    \"timestamp\": \"2024-01-03T12:00:00Z\",\n    \"text\": \"This is a sample post about Python programming.\",\n    \"postImage\": \"https://example.com/post.jpg\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get Posts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:{{port}}/posts?ids=post_1&ids=post_2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "posts"
+          ],
+          "query": [
+            {
+              "key": "ids",
+              "value": "post_1",
+              "description": "Post ID (can be repeated)"
+            },
+            {
+              "key": "ids",
+              "value": "post_2"
+            }
+          ]
+        },
+        "description": "Retrieve posts by their IDs"
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:{{port}}/posts?ids=post_1&ids=post_2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "posts"
+              ],
+              "query": [
+                {
+                  "key": "ids",
+                  "value": "post_1"
+                },
+                {
+                  "key": "ids",
+                  "value": "post_2"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "body": "[\n  {\n    \"id\": \"post_1\",\n    \"userId\": \"user_123\",\n    \"author\": \"John Doe\",\n    \"authorImage\": \"https://example.com/image.jpg\",\n    \"authorHeadline\": \"Software Engineer\",\n    \"timestamp\": \"2024-01-03T12:00:00Z\",\n    \"text\": \"This is a sample post about Python programming.\",\n    \"postImage\": \"https://example.com/post.jpg\"\n  },\n  {\n    \"id\": \"post_2\",\n    \"userId\": \"user_123\",\n    \"author\": \"Jane Smith\",\n    \"authorImage\": \"https://example.com/image2.jpg\",\n    \"authorHeadline\": \"Data Scientist\",\n    \"timestamp\": \"2024-01-02T10:00:00Z\",\n    \"text\": \"Machine learning insights and best practices.\",\n    \"postImage\": \"https://example.com/post2.jpg\"\n  }\n]"
+        }
+      ]
+    }
+  ]
+}

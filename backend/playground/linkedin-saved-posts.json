@@ -1,0 +1,522 @@
+[
+  {
+    "author": "Eduardo Ordax",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAJXQIEBA0FD4IckM2LrQQQUyKaXcBEIz68?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAJXQIEBA0FD4IckM2LrQQQUyKaXcBEIz68",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D03AQHB4soLey_GDw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1706822486276?e=1767830400&v=beta&t=MQHbrwCfrkA-YNAkF0S6yWDJLnvbH1nDqSO5ogOJK9Y",
+    "authorHeadline": "🤖 Generative AI Lead @ AWS ☁️ (100k+) | Startup Advisor | Public Speaker | AI Outsider",
+    "timestamp": "17 horas",
+    "text": "🔥 Learning CUDA in 12 hours?! Yes and it’s brutal… but absolutely essential.\n\nIf you’re serious about building a career in AI, I mean building AI, not just with it, then you can’t afford to ignore CUDA.\n\nCUDA is where the magic happens and what makes AI run….It’s the invisible backbone behind everything from training LLMs to fine-tuning models and optimizing inference on GPUs.\n\n💡 The good news?\nThere’s now a free, 12-hour deep dive course that covers all the fundamentals.\nIt’s intense. It’s technical. It can be painful but it’s worth every minute.\n\n🧠 You’ll learn:\n1️⃣ Deep learning ecosystem + CUDA setup\n2️⃣ GPU programming & writing your first kernels\n3️⃣ Kernel profiling, atomics & the CUDA programming model\n4️⃣ cuBLAS, cuDNN, and when to use them\n5️⃣ Matrix multiplication optimization (yes, really)\n6️⃣ CUDA vs Triton — which one to use, when\n7️⃣ PyTorch extensions & low-level hacks\n8️⃣ Building an MLP trainer from scratch — in PyTorch, NumPy, C… and finally CUDA 😮💨\n\n📅 My advice?\nDon’t binge it in one go. Set a pace: 3 hours/week, finish in a month. Take notes. Rebuild the examples.\n\nLet’s go deep. Links to the course in the comments!\n\n#AI #CUDA #NVIDIA #LLMs\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E22AQFqPe5gfkL_LQ/feedshare-shrink_480/B4EZs9rUlJHcAY-/0/1766266325873?e=1767830400&v=beta&t=bqyvgHK9x5NAtWuaQh_fjY_4ylIpGpZinU-s3PQxGis",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7408257919055712256?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408257919055712256%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7408257919055712256"
+    }
+  },
+  {
+    "author": "Yves Albers-Schoenberg",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAgkxPgBGc3NePq_qlt9gFOJi6wrpNeyTbo?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAgkxPgBGc3NePq_qlt9gFOJi6wrpNeyTbo",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E03AQHIHFm339HdPg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1680699227063?e=1767830400&v=beta&t=5k-eYzGCTHhDPEePC11D0PVV41pxXzROXIKvONAkbdM",
+    "authorHeadline": "Founder & CTO at Roboto AI",
+    "timestamp": "1 día",
+    "text": "𝗙𝗿𝗼𝗺 𝗥𝗢𝗦 𝘁𝗼 𝗟𝗲𝗥𝗼𝗯𝗼𝘁: 𝗛𝗼𝘄 𝗔𝗿𝗲 𝗧𝗲𝗮𝗺𝘀 𝗛𝗮𝗻𝗱𝗹𝗶𝗻𝗴 𝗩𝗟𝗔 𝗗𝗮𝘁𝗮 𝗣𝗶𝗽𝗲𝗹𝗶𝗻𝗲𝘀?\n\nMost real-world robotics systems are built on pub/sub architectures like #ROS.\nSensors and estimators publish asynchronously and at different rates:\n\n• Cameras at ~30 Hz\n• Perception at ~10 Hz\n• State, control, and actions all run on their own clocks\n\nThis decoupled design has powered robotics for decades. Vision-Language-Action models like NVIDIA Robotics GR00T and Physical Intelligence pi0 work differently. For both training and inference, they require synchronized, tensor-based data with aligned observations, states, and actions on a shared timeline.\n\nHugging Face's #LeRobot has emerged as the community standard for representing this kind of training data. It is PyTorch-native, well documented, and increasingly supported across the ecosystem.\n\nThe hard part is the bridge from asynchronous ROS topics to synchronized LeRobot episodes, without introducing bias or artifacts.\n\nAt Roboto AI, we see a few common approaches in practice:\n\n1) 𝗥𝗮𝘄 𝗥𝗢𝗦𝗯𝗮𝗴 𝗼𝗿 𝗠𝗖𝗔𝗣, 𝘁𝗵𝗲𝗻 𝗼𝗳𝗳𝗹𝗶𝗻𝗲 𝗰𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻 𝘁𝗼 𝗟𝗲𝗥𝗼𝗯𝗼𝘁\n✔ Maximum data fidelity and the ability to reprocess later\n✘ Timestamp handling, resampling, interpolation, and episode definition all need real care\n\n2) 𝗢𝗻𝗹𝗶𝗻𝗲 𝘀𝘆𝗻𝗰𝗵𝗿𝗼𝗻𝗶𝘇𝗮𝘁𝗶𝗼𝗻 𝘄𝗶𝘁𝗵 𝗱𝗶𝗿𝗲𝗰𝘁 𝗟𝗲𝗥𝗼𝗯𝗼𝘁 𝘄𝗿𝗶𝘁𝗶𝗻𝗴\n✔ Training-ready data immediately\n✘ Synchronization choices are locked in once data is recorded\n\n3) 𝗛𝘆𝗯𝗿𝗶𝗱 𝗰𝗮𝗽𝘁𝘂𝗿𝗲 𝘂𝘀𝗶𝗻𝗴 𝗿𝗮𝘄 𝗯𝗮𝗴𝘀 𝗽𝗹𝘂𝘀 𝗮 𝘀𝘆𝗻𝗰𝗵𝗿𝗼𝗻𝗶𝘇𝗲𝗱 𝗱𝗮𝘁𝗮𝘀𝗲𝘁\n✔ Fast iteration with reproducibility\n✘ Higher storage costs and more operational complexity\n\n4) 𝗖𝘂𝘀𝘁𝗼𝗺, 𝗻𝗼𝗻-𝗥𝗢𝗦 𝗽𝗶𝗽𝗲𝗹𝗶𝗻𝗲𝘀\n✔ Full control over data primitives\n✘ You end up re-implementing large parts of the robotics stack\n\nThe most common failure mode we see is train-inference skew between offline preprocessing and live data flow. This problem exists across ML, but it becomes especially critical when observations map directly to robot actions.\n\nTypical causes include:\n\n• Different resampling or alignment logic\n• Implicit lookahead during offline conversion\n• Episode boundaries that do not match deployment\n\nThe result is strong offline metrics and disappointing real-world behavior.\nDespite the push toward end-to-end learning, most production robots will continue to rely on ROS-style pub/sub systems for the foreseeable future. That makes reproducible and auditable data curation the key link between robotics stacks and VLA training.\n\nAt Roboto, we are actively building tooling to go from raw robotics data to ML-ready datasets. If you are working on VLA pipelines and have wrestled with this gap, I would love to compare notes.\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D22AQEbzdFNch289A/feedshare-shrink_480/B4DZs2EaCjIsAY-/0/1766138684936?e=1767830400&v=beta&t=N4OX-6vToJWxBDB9q4S206pmQf15oQWntWXzeLlAfZM",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7407811983791697922?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407811983791697922%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7407811983791697922"
+    }
+  },
+  {
+    "author": "Microsoft Research",
+    "profileUrl": "https://www.linkedin.com/company/microsoftresearch/",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C560BAQGgJ6XIqm5uFw/company-logo_100_100/company-logo_100_100/0/1671049348505/microsoftresearch_logo?e=1767830400&v=beta&t=Uw2LHZ_HF6hEhJrVhGsYA9A-E9wDrrQvLLiRPmBFWpM",
+    "authorHeadline": "357 mil seguidores",
+    "timestamp": "1 día",
+    "text": "From AI-driven material discovery and protein modeling to agentic systems, gaming, and multilingual AI for the global majority, 2025 turned research into real-world impact. Explore the breakthroughs in Microsoft Research’s Year in Review. >> https://msft.it/6048tUPRr\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E10AQHxdUlSM9KciA/image-shrink_480/B4EZs4Z6cWIMAo-/0/1766177876278?e=1766934000&v=beta&t=pDalqrs4wmCEW50Kv9GmKi9sute8zIZP9Ekk3JjEAaM",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7407886975950540801?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407886975950540801%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7407886975950540801"
+    }
+  },
+  {
+    "author": "Jim Fan",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAA1AILwBEWpiY_CZ_I03PL9inU_8YB3s5nQ?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAA1AILwBEWpiY_CZ_I03PL9inU_8YB3s5nQ",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C5603AQH0vt7JCOIZ2g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1659622741519?e=1767830400&v=beta&t=0EBp8nk7L7LNcXY5Ewwn3Qn544vwuUJO40Ab0nqNl90",
+    "authorHeadline": "NVIDIA Director of AI & Distinguished Scientist. Co-Lead of Project GR00T (Humanoid Robotics) & GEAR Lab. Stanford Ph.D. OpenAI's first intern. Solving Physical AGI, one motor at a time.",
+    "timestamp": "1 día",
+    "text": "Introducing NitroGen, an open-source foundation model trained to play 1000+ games: RPG, platformer, battle royale, racing, 2D, 3D, you name it! We are on a quest for general-purpose embodied agents that master not only the real world physics, but also all possible physics across a multiverse of simulations.\n\nWe found that our GR00T N1.5 architecture, originally designed for robotics, can be adapted easily to play lots of games with wildly different mechanics. Our recipe is simple and bitter lesson-pilled: (1) a 40K+ hour, high-quality dataset of public in-the-wild gameplay; (2) a highly capable foundation model for continuous motor control; (3) a Gym API that wraps any game binary to run rollouts.\n\nOur data curation is a lot of fun: it turns out that gamers love to show off their skills by overlaying real-time gamepad control on a video stream. So we train a segmentation model to detect and extract those gamepad displays and turn them into expert actions. We then mask out that region to prevent the model from exploiting a shortcut. During training, a variant of GR00T N1.5 learns to map from 40K hours of pixels to actions through diffusion transformers.\n\nNitroGen is only the beginning, and there's a long way to hill-climb on the capability. We intentionally focus only on the System 1 side: the \"gamer instinct\" of fast motor control. We open-source *everything* for you to tinker: pretrained model weights, the entire action dataset, code, and a whitepaper with solid details.\n\nToday, robotics is a superset of hard AI problems.\nTomorrow, it might become a subset, a dot in the much larger latent space of embodied AGI. Then you just prompt and \"ask for\" a robot controller.\n\nThat might be the end game (pun intended).\n\nNitroGen is co-led by our brilliant minds: Loic Magne, Anas Awadalla, Guanzhi Wang. It's a multi-institutional collaboration.\n\nWebsite: https://lnkd.in/geiNxkq9\nPaper: https://lnkd.in/gbufppAW\nCode: https://lnkd.in/gRGDnnpy\nPretrained model weights: https://lnkd.in/gNangU74\nAction dataset: https://lnkd.in/gW36UJpy\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5605AQF-zxtRXChndw/videocover-low/B56Zs3jeqPKABQ-/0/1766163607971?e=1766934000&v=beta&t=2ziW5cuo3j8IuGqTbHO0ta3y0PPC9klM5HKEGssNdSk",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7407827122855014400?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407827122855014400%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7407827122855014400"
+    }
+  },
+  {
+    "author": "Sergio Paniego Blanco",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAB2rdqQBaAqOEeUjLrE2XiQmOrCIZZteYyw?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAB2rdqQBaAqOEeUjLrE2XiQmOrCIZZteYyw",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C4D03AQEsFCnx-ONedg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1663341450639?e=1767830400&v=beta&t=MP9-635-0r77tvvgxginta4hUX4E9H-bnkQPrJhZdmc",
+    "authorHeadline": "ML Engineer @ Hugging Face 🤗 | AI PhD | Google Summer of Code '18-'25",
+    "timestamp": "2 días",
+    "text": "Google DeepMind releases FunctionGemma, a 240M model specialized in 🔧 tool calling, built for fine-tuning\n\nTRL has day-0 support. To celebrate, we’re sharing 2 new resources:\n\n> Colab guide to fine-tune it for 🌐 browser control with BrowserGym OpenEnv\n> Standalone training script\n\n> Colab notebook: https://lnkd.in/eqw5_-bg \n> Training script: https://lnkd.in/eueGg4QR (command to run it inside the script)\n> More notebooks in TRL: https://lnkd.in/eu2PEJnG\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E22AQEExDoB2aMxiw/feedshare-shrink_480/B4EZsyfBL9HcAY-/0/1766078551643?e=1767830400&v=beta&t=LdfvwD0DaJ3cWDmKI_qsEfE_REhjIt2pTogc44-xOeU",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7407470339011534848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407470339011534848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7407470339011534848"
+    }
+  },
+  {
+    "author": "Avi Chawla",
+    "profileUrl": "https://www.linkedin.com/in/ACoAACSeHjUBR43YlMI3pOJvMZLrV0e9i43SNCQ?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACSeHjUBR43YlMI3pOJvMZLrV0e9i43SNCQ",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQEJCWIuqMy2Og/profile-displayphoto-shrink_100_100/B56ZPKn7QXHIAU-/0/1734271284735?e=1767830400&v=beta&t=a9_cAoRnzQOYeAfOBJDm1kxq0hp-Wz66UHp-BU0QngM",
+    "authorHeadline": "Co-founder DailyDoseofDS | IIT Varanasi | ex-AI Engineer MastercardAI | Newsletter (150k+)",
+    "timestamp": "3 días",
+    "text": "Everyone is sleeping on this new OCR model!\n\n(100% open-source & supports 40+ languages)\n\nDatalab's Chandra topped independent benchmarks and beat the previous best dots-ocr.\n\n- Supports 40+ languages\n- Works with both images and PDFs\n- Handles text, tables, and formulas seamlessly\n- Works incredibly well on handwritten text\n\nMoreover, it outperforms DeepSeek OCR and Gemini Flash 2.\n\nI have shared the GitHub repo in the comments. You can also find the benchmarks there.\n____\nFind me → Avi Chawla\nEvery day, I share tutorials and insights on DS, ML, LLMs, and RAGs.\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5605AQHeyhYBHWruhA/videocover-low/B56Zsw81fxJ4BQ-/0/1766052814132?e=1766934000&v=beta&t=JfvYeWJi5M330KdcKFCzrHL4Zn2hxH8g-_vL1TvwTCA",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7407362389152665600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407362389152665600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7407362389152665600"
+    }
+  },
+  {
+    "author": "Marc Mayol Orell",
+    "profileUrl": "https://www.linkedin.com/in/ACoAACi7V7UBtpN9IQz7oX4Go8iBxP5cZjaqDiU?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACi7V7UBtpN9IQz7oX4Go8iBxP5cZjaqDiU",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D03AQH4k_uDDAV4Wg/profile-displayphoto-shrink_100_100/B4DZSjg9z1GkAU-/0/1737910116003?e=1767830400&v=beta&t=xy3ouXPVMeH_YuZo8_5x6XXnIxEY7_MRhgYLYqBAJBs",
+    "authorHeadline": "Generative AI Tech Lead y Profesor",
+    "timestamp": "3 días",
+    "text": "Los sistemas agentic parecen magia… hasta que se rompen en producción: rápido, ruidoso y caro. Muchos “agentes” hoy son demos pegadas con cinta y una API key, sostenidas por hype y por fe.\n\nConstruir con agentes ahora a veces se siente como montar una nave espacial con piezas de IKEA, sin manual y con el despegue en marcha: cada semana aparece un framework nuevo, y los equipos persiguen la estabilidad como un espejismo.\n\nLa buena noticia: el caos no es inevitable si lo abordas como arquitecto/a de sistemas. Si diseñas pensando en escala, observabilidad y gobernanza (no solo en que “funcione en la demo”), el juego cambia.\n\nUn mapa práctico en 9 capas para ordenar el stack agentic:\n\n0) Despliegue: dónde viven y se ejecutan los agentes (Groq, AWS Bedrock, Vertex AI, Modal)\n1) Evaluación y telemetría: medir para mejorar (LangSmith, DeepEval, Weights & Biases)\n2) LLM core: el “cerebro” (GPT-4o, Claude 4, Gemini 2.5, Llama 4)\n3) Orquestación: coordinación de flujos y estados (LangGraph, CrewAI, AutoGen, Semantic Kernel)\n4) Planificación: descomposición y estrategia (Voyager, MetaGPT, CAMEL, OpenDevin)\n5) Ejecución de herramientas: funciones, APIs, búsqueda (LangChain Tools, OpenAI Functions, E2B)\n6) Memoria y contexto: continuidad y recall (Zep, Memo, Reverie, PromptLayer)\n7) Coordinación y mensajería: que “hablen” y se sincronicen (Kafka, Redis Pub/Sub, AgentHub)\n8) Supervisión y gobernanza: límites, políticas y control humano (Guardrails AI, LangFuse, PolicyKit)\n\nLos tools cambian. La arquitectura aguanta. Y la gobernanza es lo que permite escalar algo más allá del prototipo.\n\nSi estás conectando piezas sin un diseño claro, el coste aparece después: en incidentes, deuda técnica y pérdida de confianza.\n\n¿Qué capa estás trabajando más ahora mismo: evaluación, memoria, orquestación, gobernanza…? Me interesa comparar enfoques y aprendizajes reales.\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E10AQEgsIuN4QDAFQ/image-shrink_480/B4EZstCn8LGoAk-/0/1765987222498?e=1766934000&v=beta&t=12uoHAn4vkmjvygDOedOk0GSGBqOxy4p6seDR1Rh1m8",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7407087274347372545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407087274347372545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7407087274347372545"
+    }
+  },
+  {
+    "author": "🎧 Eric Riddoch",
+    "profileUrl": "https://www.linkedin.com/in/ACoAABQ0dTIBFhHJFtMv3lM2Q2pAsPJWzp317fc?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABQ0dTIBFhHJFtMv3lM2Q2pAsPJWzp317fc",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E35AQGCaDkJaTqlpA/profile-framedphoto-shrink_100_100/B4EZqiqpA4IQAo-/0/1763665678619?e=1766934000&v=beta&t=oHzYZxOLCpHQUMJZGJbYEkq6i2HOP3t-i3TvhokE8ig",
+    "authorHeadline": "Director of ML Platform @ Pattern",
+    "timestamp": "3 días",
+    "text": "Re: vibe coding. I had an interview today where they had me write a full-stack app in one hour. \n\nTests. Backend. Frontend. Database. Docker.\n\nTotally open book: Google, ChatGPT, cursor, Claude code, your personal project repos. All of it.\n\nIf not for my dabbling with vibe coding for work and personal projects, I would have been totally hosed. \n\nAs it was, since I don’t have a full-time job, I don’t have ChatGPT or Cursor/Copilot so I scrambled to get onto the free versions of both. I managed to get a broken frontend working, basic backend with FastAPI and uv, and a redis cache in docker compose which I was proud of.\n\nBut I could have gotten further if I’d had one of my AI tools ready to go. Was the first interview ever where I found myself stress prompting instead of stress “looking for the index error on line 7.”\n\nI wouldn’t be surprised if I don’t pass the round since I could see how others would wreck my progress with the right tools and know how.\n\nBut it was fun!! I had a great time, and I’d love to run that sort of interview myself down the line.\n\nAnyway, just watched this video about many Claude code features. The thing about git work trees would have helped me a ton today, I could have had a few agents in parallel, \n\n1. one debugging my frontend,\n2. one writing pytest tests for the backend\n3. one writing a playwright test for the static HTML, CSS, JS frontend \n4. one getting my uv docker build to work.\n\nAnyway, this video has the quality of a well-written chapter of a book and it picked up a few tips from it: https://lnkd.in/gAZps5TN\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/sync/v2/D5627AQHRbIfx1eW8Kg/articleshare-shrink_800/B56ZkhS_F6HkAI-/0/1757200249588?e=1766934000&v=beta&t=RNhZqpg8h1RUAYs1CWiQI3lnyggSal-7aPJoPtbjttc",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7407225535946223616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407225535946223616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7407225535946223616"
+    }
+  },
+  {
+    "author": "Eduardo Ordax",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAJXQIEBA0FD4IckM2LrQQQUyKaXcBEIz68?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAJXQIEBA0FD4IckM2LrQQQUyKaXcBEIz68",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D03AQHB4soLey_GDw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1706822486276?e=1767830400&v=beta&t=MQHbrwCfrkA-YNAkF0S6yWDJLnvbH1nDqSO5ogOJK9Y",
+    "authorHeadline": "🤖 Generative AI Lead @ AWS ☁️ (100k+) | Startup Advisor | Public Speaker | AI Outsider",
+    "timestamp": "4 días",
+    "text": "🚨 This is huge!!!! AWS just made certifications way easier (and 𝗙𝗥𝗘𝗘).\n\nThese are some of the most demanded certifications in the IT industry so, if you have time during the holidays, this could be the perfect plan to boost your career path.\n\nAmazon Web Services (AWS) is offering FREE premium exam prep on AWS Skill Builder until Jan 5, 2026 👇\n\n🎓 𝗖𝗼𝘃𝗲𝗿𝘀:\n🔸AWS Certified Cloud Practitioner (CLF-C02)\n🔸AWS AI Practitioner\n\n💡 𝗪𝗵𝗮𝘁 𝘆𝗼𝘂 𝗴𝗲𝘁 (𝗻𝗼𝗿𝗺𝗮𝗹𝗹𝘆 𝗽𝗮𝗶𝗱):\n✅ Official practice exams\n✅ Hands-on labs (SimuLearn)\n✅ AWS Escape Room (learning by playing)\n✅ Flashcards & learning plans\n\nPlus, there are always-free resources:\n• Official practice questions\n• Free AWS training events\n• AWS Educate (labs + potential free exam vouchers)\n\n⏳ 𝗠𝘆 𝘁𝗮𝗸𝗲:\nAWS is removing friction on purpose.\nIf you want cloud + AI skills on your CV, this is a no-brainer.\n\nFree. Practical. Time-limited.\n\nRepost so others can benefit from it!!!!\n\n#ai #aws #certification\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E22AQGt5ErKAm8o1w/feedshare-shrink_480/B4EZspCKH1HMAY-/0/1765919991447?e=1767830400&v=beta&t=Im_bTyN4gGe9l-LqzpfB0Kqk0xWW4Uueb-CgWC6toGQ",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7406805287044816897?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406805287044816897%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7406805287044816897"
+    }
+  },
+  {
+    "author": "Nataliia Vereshchaka",
+    "profileUrl": "https://www.linkedin.com/in/ACoAADpx3iUBWJhgng4p4Lc2RfVP0t6u6AZyj2Y?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADpx3iUBWJhgng4p4Lc2RfVP0t6u6AZyj2Y",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C4E03AQGInYjWrboG-g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1654506545988?e=1767830400&v=beta&t=80YW6sf1FG8yJDa_GplSEzNlSCXdcibyXrasdMmnOak",
+    "authorHeadline": "Recruiter at Engenious // Looking for Full stack Developer, Senior Front End Developer, Junior UI/UX Designer, DevOps",
+    "timestamp": "6 días",
+    "text": "🚀 We’re hiring at Engenious!\nWe have several urgent openings and are looking for talented professionals to join our team:\n\n🎨 UI/UX Designer – 1+ year of experience in product or IT consulting companies, with web and mobile experience\n💻 Front-End Developer – Middle–Senior level experience\n🖥️ Full Stack Developer – 6+ years of experience\n🤖 AI/ML Engineer – strong experience in AI/ML projects\n⚙️ DevOps Engineer\n\nIf you’re passionate about building great products and want to grow with a dynamic team, we’d love to hear from you!\n\n📩 Apply here: https://lnkd.in/dpRnCWWq\n…ver más",
+    "postImage": "",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7406329713939517440?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406329713939517440%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7406329713939517440"
+    }
+  },
+  {
+    "author": "Jure Leskovec",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAACX7QBuhEoAgVDFVcrSCx5SC6TX7Ba-Lw?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAACX7QBuhEoAgVDFVcrSCx5SC6TX7Ba-Lw",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E03AQG7-urCRkt5Uw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1692848882575?e=1767830400&v=beta&t=AI7YRm3urE_wZMB9s2mlr4gX0gd4e3mAsjQvWGFma04",
+    "authorHeadline": "Professor at Stanford Computer Science and Co-Founder at Kumo.ai",
+    "timestamp": "1 semana",
+    "text": "The AI Revolution for Structured Data is Finally Here.\nThrilled to share my conversation at The Data Exchange with Ben Lorica 罗瑞卡 on a game-changing topic: Relational Foundation Models (RFMs).\n\nFor years, applying AI to enterprise's most valuable structured data (warehouses, customer records, transactions) has been stuck in manual feature engineering, taking months to deploy a single model. Not anymore.\n\nKey Takeaways from the Discussion:\n🧠 No-Pipeline Predictions: RFMs treat relational data as a graph, allowing a pre-trained transformer to make instantaneous, zero-shot predictions (like 60-day churn or next-best-offer) directly from raw data in milliseconds.\n📈 \"Superhuman\" Accuracy: Fine-tuned RFMs are delivering 10-20% higher accuracy than traditional ML approaches—leading to hundreds of millions in value for companies like DoorDash, Reddit, and Coinbase.\n⏱️ 20x Productivity: Data scientists are freed from the 6-month feature engineering treadmill to focus on business impact and strategy.\n\nIf you are a Data Scientist, ML Engineer, or Data Leader, this is essential listening to understand how the foundational model paradigm is coming to your data warehouse.\n\nListen to the full episode and check out the transcript below!\nhttps://lnkd.in/drqEkjch\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D22AQHcmS9qb4lmnw/feedshare-shrink_480/B4DZr.7dZTG8As-/0/1765213591450?e=1767830400&v=beta&t=sDePiFEzCcnXmpkjX-xFh6sGv6ZG41bFhxLyL-Esk9U",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7403842432703905792?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403842432703905792%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7403842432703905792"
+    }
+  },
+  {
+    "author": "Florian Hönicke",
+    "profileUrl": "https://www.linkedin.com/in/ACoAABcuYhwBZKVzRlLnQO17RF27IDHPafI8y2g?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABcuYhwBZKVzRlLnQO17RF27IDHPafI8y2g",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E03AQFpGhAmRnv78A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724664439163?e=1767830400&v=beta&t=Lzqf2FKVBq3kHeslckZ16RUcI9UKINDfnBpNfTRRZhQ",
+    "authorHeadline": "Principal AI Engineer - Keynote Speaker",
+    "timestamp": "1 semana",
+    "text": "Jailbreak LLMs with one simple trick. 🧠 \nThey discover scaling laws for jailbreaking frontier LLMs in any modality.\n\nPaper: https://lnkd.in/dK6YPupD\nAuthors: Aengus Lynch, John Hughes, Sara Price, Aengus Lynch, Rylan Schaeffer, Fazl Barez, Sanmi Koyejo, Henry Sleight, Erik Jones, Ethan Perez, Mrinank Sharma\n\nBtw, NeurIPS was fun. I learned a lot and will share some more insights with you in the upcoming weeks.\n#NeurIPS\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D05AQEHqYL0Bw1fCA/videocover-low/B4DZsJBttoHwBQ-/0/1765383007268?e=1766934000&v=beta&t=yx3vtJ27h4baWe2ZKPU_18EjCE5-ZhIMGfv1SJrAFMg",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7404553055846785024?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7404553055846785024%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7404553055846785024"
+    }
+  },
+  {
+    "author": "Akshay Pachaar",
+    "profileUrl": "https://www.linkedin.com/in/ACoAACDRc3cBwnfUnZ2dYUQEIPx2zG1QfUqNJ84?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACDRc3cBwnfUnZ2dYUQEIPx2zG1QfUqNJ84",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQGtG5ToWR7YTw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1705726876772?e=1767830400&v=beta&t=FC4Y_yIyCHNCcpV-2I3Ug9r3TcS08IrBZ2GZe7N2vwo",
+    "authorHeadline": "Co-Founder DailyDoseOfDS | BITS Pilani | 3 Patents | X (187K+)",
+    "timestamp": "1 semana",
+    "text": "Top 50 LLM Interview Questions.\n\n(great resource to learn LLM basics)\n\nExplore the key concepts, techniques, and challenges of Large Language Models (LLMs) with this comprehensive guide, crafted for AI enthusiasts and professionals preparing for interviews.\n\nI have shared a link to this PDF in the comments.\n\n👉 Interested in ML/AI Engineering? Sign up for our newsletter and get a FREE MCP Guidebook with 10+ hands-on projects: link in the first comment.\n_____\nShare this with your network if you found this insightful ♻️\nFollow me (Akshay Pachaar) for more insights and tutorials on AI and Machine Learning!\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQEqRFFSFrLf5Q/feedshare-shrink_480/B56ZsOLkNFI8AY-/0/1765469472516?e=1767830400&v=beta&t=ii_ISWyS1H6wZ09QHtEPnB_KNAfowSpdQPbru3j0pH8",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7404915678022971392?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7404915678022971392%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7404915678022971392"
+    }
+  },
+  {
+    "author": "Leadtech Group",
+    "profileUrl": "https://www.linkedin.com/company/leadtech-group/",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C4E0BAQGm6GIMqyYrbg/company-logo_100_100/company-logo_100_100/0/1656910905863/leadtech_group_logo?e=1767830400&v=beta&t=VyIJQncxqcwIEEOsLhQcrtPo6-35ZJtb8XZt0awiqtM",
+    "authorHeadline": "282 mil seguidores",
+    "timestamp": "3 semanas",
+    "text": "It’s that time of the year...the perfect moment to reflect, recharge, and rethink what’s next!🧮\n\nIf your 2026 goal is to grow, build meaningful things, and work with people who care: your next role might be right here!💥😍\n\nAt Leadtech, we’re hiring across teams: AI, Data, HR, and more.📣\nWe’re looking for curious minds, proactive thinkers, and people who want to be part of something that keeps evolving.🚀\n\n🚀 Explore what we’re building — and where you could jump in: https://lnkd.in/eAertkY\n\n#LifeAtLeadtech #WeAreManyMany #NewBeginnings #NowHiring #TechCareers #GrowthMindset #JoinOurTeam #OpenRoles\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D10AQHYFi9rE_jgDQ/ads-document-cover-images_480/B4DZrJe.GAIkA4-/0/1764316932122?e=1766934000&v=beta&t=6IjnW5ATrwaBQbp83NLz0EpGnusLS-Gjzd-cK5u6i34",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7400081649884966912?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400081649884966912%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7400081649884966912"
+    }
+  },
+  {
+    "author": "Juan Marín",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAB8v2GwBjq1V5KulUo7MUnwLihNgM1IgrKY?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAB8v2GwBjq1V5KulUo7MUnwLihNgM1IgrKY",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E03AQE1ziZaoYfiWQ/profile-displayphoto-scale_100_100/B4EZsAdjSvIoAc-/0/1765239306024?e=1767830400&v=beta&t=LPpKWBFMhn_zAMsp98yprADSuseyXAPW0D0XrenwlK4",
+    "authorHeadline": "CTO/Co-fundador | Arquitecto de Software. Construyendo 2 startups en Latam. Comparto el impacto de nuestras decisiones en el equipo y el negocio.",
+    "timestamp": "2 semanas",
+    "text": "𝗕𝗿𝘂𝗻𝗼 𝗵𝗮𝗰𝗲 𝗹𝗼 𝗾𝘂𝗲 𝗣𝗼𝘀𝘁𝗺𝗮𝗻 𝗻𝘂𝗻𝗰𝗮 𝗽𝘂𝗱𝗼\n\nBruno es un cliente de APIs open-source que finalmente lo hace bien: tus colecciones de APIs viven como 𝗮𝗿𝗰𝗵𝗶𝘃𝗼𝘀 𝗱𝗲 𝘁𝗲𝘅𝘁𝗼 𝗽𝗹𝗮𝗻𝗼 en tu repositorio de Git.\n\nSin cuentas en la nube. Sin problemas de sincronización. Sin pagar licencias por cada usuario.\n\n𝗕𝗿𝘂𝗻𝗼 𝗳𝘂𝗻𝗰𝗶𝗼𝗻𝗮 𝗱𝗶𝗳𝗲𝗿𝗲𝗻𝘁𝗲:\n\nGuarda todo en una carpeta de tu sistema de archivos usando un lenguaje de marcado llamado 𝗕𝗿𝘂. Esto significa que tus colecciones de APIs son simplemente archivos que puedes hacer commit, diff y merge como cualquier otro código.\n\n𝗟𝗮𝘀 𝘃𝗲𝗻𝘁𝗮𝗷𝗮𝘀 𝘀𝗼𝗻 𝗲𝗻𝗼𝗿𝗺𝗲𝘀:\n• Sin limite de usuarios. Sin pago de licencias por cada usuario. Todo tu equipo puede usarlo sin costos extra.\n• Colaboración real basada en Git. Nada de \"comparte este workspace\".\n• Code reviews para cambios en APIs. Ves exactamente qué endpoints cambiaron en un PR.\n• Offline-first. Cero dependencia de servidores en la nube o autenticación.\n• Sin telemetría ni envío de datos a servidores de Bruno. Sin recolección de datos personales, sin harvesting de información.\n• Funciona perfectamente con los workflows de Git que ya usas (branches, PRs, resolución de conflictos).\n\n𝗦𝗼𝗽𝗼𝗿𝘁𝗲 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗼:\n\nSoporta todo lo que esperarías: REST, GraphQL, GRPC, WebSockets, variables de entorno, pre-request scripts, tests, OAuth 2.0, e incluso secret managers como HashiCorp Vault.\n\n(Postman recientemente también agregó sincronización con Git, pero usa JSON en lugar del formato Bru amigable de Bruno)\n\nhttps://docs.usebruno.com/\n\nEs lo que los clientes de APIs deberían haber sido desde el principio.\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E22AQH00wgxzH7OCw/feedshare-shrink_480/B4EZruQunVKcAY-/0/1764933954498?e=1767830400&v=beta&t=SB2T0j4FPgDVCAmP7-GLV_0gqGNHZ-CM53ZGuf-wPr8",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7402669549940264960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7402669549940264960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7402669549940264960"
+    }
+  },
+  {
+    "author": "Milvus, created by Zilliz",
+    "profileUrl": "https://www.linkedin.com/company/the-milvus-project/",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C560BAQFEnFT_sA6yEA/company-logo_100_100/company-logo_100_100/0/1648617503170/the_milvus_project_logo?e=1767830400&v=beta&t=VIUIJCek3HEtchz37Y9UIv4H4e_X1OLukpbwWbh1qck",
+    "authorHeadline": "10 mil seguidores",
+    "timestamp": "3 semanas",
+    "text": "𝐑𝐞𝐝𝐝𝐢𝐭 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 just shared a deep dive on their Vector Database selection journey.\nThrilled and honored to see 𝐌𝐢𝐥𝐯𝐮𝐬 stand out for reliability and scale. 🚀\n\nThey narrowed the field from many options (Vertex AI, Elasticsearch, etc.) to a final showdown: Qdrant vs. Milvus, based on strict criteria: Open Source, Proven 1B+ Scale, and High Performance.\n\n🧪Reddit stressed-tested both systems, focusing on two critical operational areas:\n1. 𝐒𝐜𝐚𝐥𝐢𝐧𝐠: While Qdrant required manual sharding for replication changes, Milvus excelled with 𝐚𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜 𝐝𝐚𝐭𝐚 𝐫𝐞𝐛𝐚𝐥𝐚𝐧𝐜𝐢𝐧𝐠, significantly reducing operational toil.\n2. 𝐃𝐞𝐛𝐮𝐠𝐠𝐚𝐛𝐢𝐥𝐢𝐭𝐲: Reddit found that Milvus's distributed architecture provided superior observability and control, making it easier to isolate and fix issues under stress.\nThis is precisely why Reddit chose 𝐌𝐢𝐥𝐯𝐮𝐬🏆.\n\n💡There is no \"standard answer\" for selection, but here are some lessons learned:\n𝐃𝐢𝐠 𝐃𝐞𝐞𝐩𝐞𝐫: Challenge requirements and avoid bias—don't get trapped by existing solutions.\n𝐒𝐜𝐨𝐫𝐞𝐬 ≠ 𝐃𝐞𝐜𝐢𝐬𝐢𝐨𝐧𝐬: Use matrices to clarify needs, but don't get fooled by flashy documentation.\n𝐁𝐚𝐥𝐚𝐧𝐜𝐢𝐧𝐠 𝐀𝐫𝐭: Don't obsess over raw speed. Prioritize maintenance, debugging, and usability over niche performance metrics.\n\nKnow the details: https://lnkd.in/geDFytws\n———\n👉 Follow Milvus, created by Zilliz, for everything related to unstructured data!\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQFcVKYZ90r6eQ/feedshare-shrink_480/B56ZrD3cInKAAc-/0/1764222683806?e=1767830400&v=beta&t=g3wZ0OZs7oOvoACQhtDXpFyNNGm10fEgWi_340hfqlw",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7400198038822174720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400198038822174720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7400198038822174720"
+    }
+  },
+  {
+    "author": "Benjamin Rogojan",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAA3roGYByurxK9YsOLOqN2Mn748HOZhjuSE?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAA3roGYByurxK9YsOLOqN2Mn748HOZhjuSE",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQGUS9T7mDF8Bg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1722025414186?e=1767830400&v=beta&t=xF6k7N0XSkKVn2mPRkHXhx7Dw7sIIG7ULYL9ZuL0gwI",
+    "authorHeadline": "Fractional Head of Data | Tool-Agnostic. Outcome-Obsessed",
+    "timestamp": "2 semanas",
+    "text": "I created a guide for data engineers, software engineers, data scientists, analysts, and other technical professionals who want to start consulting.\n\nIt has templates for proposals, decks, and emails as well as links to articles nd videos you should look into if you want to start your own consulting company!\n\nThis was initially inspired by Zach Wilson's Data Engineering Handbook. But I am going to start moving some of it off of just github.\n\nIt also has great contributions from Shachar Meir Gideon Fernandez and Jody Hesch\n\nCheck it out here- https://lnkd.in/gqJ5tkGs\n\nLike, repost, share to spread the word and make this as awesome as possible for everyone.\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQEHW80N7C1Z3w/feedshare-shrink_480/B56Zrq75JILwAY-/0/1764878161419?e=1767830400&v=beta&t=dd_f66z3YsDUsWye7MQYUh3l9BGe0MXdGDaAHZp8BI4",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7402435536977924096?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7402435536977924096%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7402435536977924096"
+    }
+  },
+  {
+    "author": "Alejandro Saucedo",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAjS6gQByF9jD0BrsOqiPoWCN52pxZiGaN0?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAjS6gQByF9jD0BrsOqiPoWCN52pxZiGaN0",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E03AQFnLHnC51IgFw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1721631552097?e=1767830400&v=beta&t=CHQ5uwDSkg99wiStsWpECT-FmjJPLAUfl-b7MoMqRnk",
+    "authorHeadline": "AI & Tech Executive @ Zalando | Advisor @ UN, EU, ACM, etc | Join 70k+ ML Newsletter",
+    "timestamp": "2 semanas",
+    "text": "Sebastian Raschka and Andrej Karpathy's educational material is becoming a key cornerstone for foundational ML knowledge; and Raschka's recent course on \"Building an LLM (From Scratch)\" is becoming a must-watch classic: \n\nThis course walks ML practitioners through implementing a GPT-style model end-to-end in plain PyTorch, starting from text preprocessing and tokenization. \n\nIt goes through hand-built attention and Transformer blocks to a full GPT architecture with training and generation which is great to build the intuition. \n\nAlong the way in this course, you implement next-token pretraining on unlabeled text, and then repurpose the pretrained backbone for supervised tasks like text classification and simple chat-style behavior. \n\nThere are quite a lot of great takeaways, but these approaches of learning by building something from scratch often are such a great way to develop the foundations before going to the higher level / advanced domains (i.e. building agentic frameworks, transfer learning, etc). \n\nCourse: https://lnkd.in/ecMjKvqn \n\n—\n\nIf you liked this post you can join 70,000+ practitioners for weekly tutorials, resources, OSS frameworks, and MLOps events across the machine learning ecosystem: https://lnkd.in/eRBQzVcA\n\n#ML #MachineLearning #ArtificialIntelligence #AI #MLOps #AIOps #DataOps #augmentedintelligence #deeplearning #privacy #kubernetes #datascience #python #bigdata\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E10AQEOAgzWxFo7RA/image-shrink_480/B4EZroRMqbKgAk-/0/1764833415938?e=1766934000&v=beta&t=836UDY1g7rm1F-e8AdCC7EtNNoDrAYpoukSl5wJTGhU",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7402247942377590784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7402247942377590784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7402247942377590784"
+    }
+  },
+  {
+    "author": "Zachary Bloss",
+    "profileUrl": "https://www.linkedin.com/in/ACoAABaEztEBvlACv-CFrhYzSMjO5YNNS3C1zbA?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABaEztEBvlACv-CFrhYzSMjO5YNNS3C1zbA",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQFPWmMgFAB1mA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1725118878585?e=1767830400&v=beta&t=_slkACGmy_-65VWBRulRCZX2s6NC6BACy0bNGDyWmZA",
+    "authorHeadline": "Agentic AI Leader",
+    "timestamp": "2 semanas",
+    "text": "Hey all, I'm looking for a Senior Machine Learning Engineer to join my team at Censys! Come help me continue to improve our outstanding Internet Map data. Feel free to reach out to me if you have questions before applying!\n\nhttps://lnkd.in/gPmqAwmg\n\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/sync/v2/D5627AQFMFIoJRtu2Xg/articleshare-shrink_800/B56ZrbxkHqL0AI-/0/1764623795027?e=1766934000&v=beta&t=LakW5iSP9RvZ8FuSdvyC9CMdPrMzHyKWKEapZhpZ7HU",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7401368663209283584?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401368663209283584%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7401368663209283584"
+    }
+  },
+  {
+    "author": "Sumanth P",
+    "profileUrl": "https://www.linkedin.com/in/ACoAACkphDcBDruPBdXiAnqyc834jkTkd_4kRnU?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACkphDcBDruPBdXiAnqyc834jkTkd_4kRnU",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQGhh7byBtlnxA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728913891497?e=1767830400&v=beta&t=pSFis3-l1PEDxrQL4vlT9sb8XauStnVDqjAGmS_-HS0",
+    "authorHeadline": "Machine Learning Developer Advocate | LLMs, AI Agents & RAG | Shipping Open Source AI Apps | AI Engineering",
+    "timestamp": "3 semanas",
+    "text": "Top 50 LLM Interview Questions!\n\nA comprehensive resource that covers traditional ML basics, model architectures, real-world case studies, and theoretical foundations.\n\nIf you’re preparing for ML/AI Engineering interviews, this PDF will be a valuable resource.\n\nThe best part?\n\nEach question is paired with a concise, clear answer and examples.\n\nLink to the PDF in the comments!\n\n_____\n♻️ Share this with your network if you found this insightful \n➕ If you’re into ML, LLMs, and AI agents, join AI Engineering (it’s free): https://lnkd.in/gP2bSzGZ\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQHFYB0Tg5O5Pw/feedshare-shrink_480/B56ZrUmR_qI8AY-/0/1764503397207?e=1767830400&v=beta&t=pXUQYBeFcAYBwHqkwNFWrPGjKoKLk2i77UL7RWUwki4",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7400863663253028864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400863663253028864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7400863663253028864"
+    }
+  },
+  {
+    "author": "Lior Alexander",
+    "profileUrl": "https://www.linkedin.com/in/ACoAADMTPYsBtfLtDZlCPxc0G4n0-rFYtqhC0yE?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADMTPYsBtfLtDZlCPxc0G4n0-rFYtqhC0yE",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQE6tDGRL_bgHg/profile-displayphoto-scale_100_100/B56ZoDP39oHQAc-/0/1760991119084?e=1767830400&v=beta&t=1M9w88k-zMsTwhhwj7Dqo36u6Oxj2eDUxFLoudgKz4M",
+    "authorHeadline": "Helping developers stay up to date with AI. CEO at AlphaSignal.",
+    "timestamp": "3 semanas",
+    "text": "The best fine-tuning guide you'll find on arXiv this year.\n\nCovers:\n> NLP basics\n> PEFT/LoRA/QLoRA techniques\n> Mixture of Experts\n> Seven-stage fine-tuning pipeline \n▸ 5-min daily newsletter for developers to keep up with AI: https://lnkd.in/gUB_3cWq \n\n▸ Source: https://t.co/x0ihiqfPFD\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5610AQGl2u0ToIGbJg/image-shrink_480/B56Zq2YxSzI4Ak-/0/1763996540523?e=1766934000&v=beta&t=64tUU6tQee4Nnr4zHLrKySgONuqOATh5KZgbLrWMWfg",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7398737841712902145?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7398737841712902145%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7398737841712902145"
+    }
+  },
+  {
+    "author": "Raúl Castilla Bravo",
+    "profileUrl": "https://www.linkedin.com/in/ACoAADHV5GABMQxwPMSgQxFTSSiLZDQgfWE-z9k?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADHV5GABMQxwPMSgQxFTSSiLZDQgfWE-z9k",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D03AQFNDaasS-_N-g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727715231418?e=1767830400&v=beta&t=cD8zaEP1LFFgMW7KL5Xkxb4rJ_8AnuMx_7IQqjnY5Qw",
+    "authorHeadline": "Divulgo sobre IA y Software Development",
+    "timestamp": "3 semanas",
+    "text": "Bloqueo exclusivo con Redis + Mutex.\n\nFácil y esencial para entornos distribuidos.\n\nSi no sabes qué es un bloqueo exclusivo:\n🔺 Da acceso de solo escritura a un recurso.\n🔺 Impide leer y escribir a otros procesos.\n\nSolo necesitas tener Docker instalado.\n\nLo que haremos será:\n🔸 Levantar Redis en local usando Docker.\n🔸 Conectar a Redis desde Python.\n🔸 Escribir un fichero con varios hilos.\n🔸 Cada hilo bloquea el recurso en Redis.\n🔸 Los demás hilos esperan para escribir.\n\nLos pasos a seguir son:\n1️⃣ Crear el docker-compose.yml\n2️⃣ Crear el .env con las variables de entorno.\n3️⃣ Levantar el contenedor de Redis (Docker).\n4️⃣ Instalar la librería de redis (Python).\n5️⃣ Crear un cliente de Redis (Python).\n6️⃣ Crear un mutex de Redis (Python).\n7️⃣ Conectar a Redis (Python).\n8️⃣ Lanzar hilos para escribir un fichero.\n9️⃣ Cada hilo usa el mutex para bloquear.\n🔟 Quien bloquea escribe, los demás esperan.\n\nTe dejo en comentarios un repositorio de GitHub con todo el código 😉\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D1FAQG2XkAMFG6BkQ/feedshare-document-cover-images_480/B4DZqyLzDlHsBM-/0/1763926030574?e=1766934000&v=beta&t=i0tPM5vcWKSRZlZGglZaP7h76MOb2mStg8BLah29GpI",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7398631572842835968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7398631572842835968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7398631572842835968"
+    }
+  },
+  {
+    "author": "Deedy Das",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAmYlT8BdMPw5UJeQWQ1d7_X3nLAJJMawX8?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAmYlT8BdMPw5UJeQWQ1d7_X3nLAJJMawX8",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQEAjbB6H5cQZw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732827432600?e=1767830400&v=beta&t=-JHRvlYyWV6dSGkqC8AewJtKwfeIwdqYR8ZUBcSGbIc",
+    "authorHeadline": "Partner at Menlo Ventures | Investing in AI startups!",
+    "timestamp": "3 semanas",
+    "text": "🚨China's DeepSeek just dropped the only open-source model good enough at math to win IMO Gold, and a must-read report!\n\nThe key idea draws from things Karpathy and others have spoken about: move beyond “final answer RL” into a generator–verifier–meta-verifier loop in pure language.\n– A verifier is RL-trained to score proofs.\n– A meta-verifier checks the verifier’s critiques.\n– A generator is RL-trained on verifier reward signals to write and self-check better proofs.\n\nBecause everything lives in natural language (no Lean), this recipe SHOULDextend to many verifiable domains: science, code, anywhere where checking is easier than solving!\n\nSource: https://lnkd.in/gFytbq6T\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5610AQE4KjG2Th461A/image-shrink_480/B56ZrLf1SsLAAs-/0/1764350711927?e=1766934000&v=beta&t=_5fmyLD_jV7xAnj7afhUnrwsho_-0hGBPNJKGQc-enw",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7400223253362987008?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400223253362987008%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7400223253362987008"
+    }
+  },
+  {
+    "author": "Ankur Dhawan",
+    "profileUrl": "https://www.linkedin.com/in/ACoAADB4pckBdb6UcEADUO3fBBZxVa_YhZzz4U0?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADB4pckBdb6UcEADUO3fBBZxVa_YhZzz4U0",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQGU8k3MB9x-TQ/profile-displayphoto-shrink_100_100/B56ZeMuERjH8AU-/0/1750412576766?e=1767830400&v=beta&t=hRL4yM6W5BOtNIRp_y3dQ9X0xgZ3jgqozNWCcdEEY1E",
+    "authorHeadline": "MTS-2 @Adobe | Top 0.1% Club @topmate | Ex @MakeMyTrip 🧑‍💻 | 56K+ @LinkedIn",
+    "timestamp": "3 semanas",
+    "text": "👉 Top Hackathons 2026 Include:\n\n🔵 Google Solution Challenge - &20L prize + Google mentorship\n\n🔵 Microsoft Imagine Cup - $100K + mentorship from Satya Nadella's team\n\n🔵 Amazon AWS Al/ML Hackathon - $50K + job referrals\n\n🔵 Meta Build for the Future - $40K + Reality Labs mentorship\n\n🔵 NVIDIA Al Innovation Challenge - $100K + GPU grants\n\n🔵 NASA Space Apps Challenge - NASA internship opportunity\n\n🔵 AICTE National Al Hackathon - &10L + job offers\n\n🔵 Smart India Hackathon (SIH 2026) - 21 Crore+ prize pool\n\n🔵 ISRO Space Innovation Challenge - Research grant + internships\n... and MANY more!\n\n💬 Comment \"Hackathon\" and I'll send you the FULL\n2026 hackathon list + links directly to your DM!\n\n#sde1 #sde2 #sde3 #sde4 #hiring #jobHunt #explore\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQFXR8pjm__61A/feedshare-shrink_480/B56ZrO4W2hHYAs-/0/1764407471730?e=1767830400&v=beta&t=jWmtUP7OFwfuPzqRXfx3erad6l3-ahVf0Q1UYN76k38",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7400461324100669440?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400461324100669440%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7400461324100669440"
+    }
+  },
+  {
+    "author": "Hao Hoang",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAC57HBIBaE6MAWK8KhWGU9U6G2MVTyczD9Y?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC57HBIBaE6MAWK8KhWGU9U6G2MVTyczD9Y",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E03AQFu47ilN2uVpw/profile-displayphoto-shrink_100_100/B4EZbRoexcHkAU-/0/1747273772643?e=1767830400&v=beta&t=n6FBICfvWeEHAwQG0eG__RFqeuoyEWNge-8gLlkOaTc",
+    "authorHeadline": "🏆Ranked #25 Global AI Creator | 🧠 Senior AI Researcher & Engineer | ✍️ Daily AI System Design Insights | 🤖 Building Agentic Systems, RAG & LLMs | 👥 38k+ Community",
+    "timestamp": "3 semanas",
+    "text": "You are in a Senior Machine Learning Interview at Google DeepMind. The interviewer sets a trap:\n\n\"We have a 1:1000 class imbalance for fraud detection. We applied 𝘤𝘭𝘢𝘴𝘴_𝘸𝘦𝘪𝘨𝘩𝘵𝘴 to the 𝐂𝐫𝐨𝐬𝐬-𝐄𝐧𝐭𝐫𝐨𝐩𝐲 loss, but the model is still missing the hard edge cases. What do we do?\"\n\n90% of candidates walk right into the wall.\n\nMost candidates immediately suggest aggressive oversampling (𝘚𝘔𝘖𝘛𝘌) or tuning the class weights even higher (e.g., 1:5000).\n\nThey think: \"If the minority class is ignored, I just need to scream louder (higher weights) during backprop.\"\n\n------\n𝐓𝐡𝐞 𝐑𝐞𝐚𝐥𝐢𝐭𝐲:\nYou aren't losing because the weights are wrong. You are losing because of 𝐆𝐫𝐚𝐝𝐢𝐞𝐧𝐭 𝐃𝐫𝐨𝐰𝐧𝐢𝐧𝐠.\n\nEven with perfect class weights, your dataset likely contains 990,000 \"easy\" negatives (legitimate transactions that are obviously legit) and 1,000 \"hard\" positives.\n\nIn standard 𝐖𝐞𝐢𝐠𝐡𝐭𝐞𝐝 𝐂𝐫𝐨𝐬𝐬-𝐄𝐧𝐭𝐫𝐨𝐩𝐲 (𝐖𝐂𝐄), the gradients from those 990,000 easy examples, even if individually small, sum up to dominate the update step.\n \nThe model spends all its capacity optimizing examples it has already learned, drowning out the signal from the difficult, subtle fraud cases.\n\n------\nThe Solution: 𝐓𝐡𝐞 𝐄𝐚𝐬𝐲-𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝐒𝐮𝐩𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧\n\nYou don't need to re-balance the counts. You need to re-balance the difficulty.\nThe solution is switching from 𝐖𝐞𝐢𝐠𝐡𝐭𝐞𝐝 𝐂𝐫𝐨𝐬𝐬-𝐄𝐧𝐭𝐫𝐨𝐩𝐲 to 𝐅𝐨𝐜𝐚𝐥 𝐋𝐨𝐬𝐬.\n\nFocal Loss adds a modulating factor (1 − pₜ)ᵞ to the standard loss equation. \n\nHere is what happens in production:\n- 𝘐𝘧 𝘵𝘩𝘦 𝘮𝘰𝘥𝘦𝘭 𝘪𝘴 𝘶𝘯𝘴𝘶𝘳𝘦 (𝘏𝘢𝘳𝘥 𝘌𝘹𝘢𝘮𝘱𝘭𝘦): The modulating factor stays near 1. The loss is unchanged. The model learns.\n- 𝘐𝘧 𝘵𝘩𝘦 𝘮𝘰𝘥𝘦𝘭 𝘪𝘴 𝘤𝘰𝘯𝘧𝘪𝘥𝘦𝘯𝘵 (𝘌𝘢𝘴𝘺 𝘌𝘹𝘢𝘮𝘱𝘭𝘦): The factor drops to near 0. The loss contribution is effectively \"shut off.\"\n\nThis forces the model to stop patting itself on the back for identifying the obvious negatives and focus 100% of its gradient descent budget on the edge cases.\n\n𝐓𝐡𝐞 𝐀𝐧𝐬𝐰𝐞𝐫 𝐓𝐡𝐚𝐭 𝐆𝐞𝐭𝐬 𝐘𝐨𝐮 𝐇𝐢𝐫𝐞𝐝:\n\n\"𝐖𝐞𝐢𝐠𝐡𝐭𝐞𝐝 𝐂𝐫𝐨𝐬𝐬-𝐄𝐧𝐭𝐫𝐨𝐩𝐲 solves for moderate imbalance (1:10) by balancing counts. 𝐅𝐨𝐜𝐚𝐥 𝐋𝐨𝐬𝐬 solves for extreme imbalance (1:1000+) by balancing hardness. In a fraud scenario, I would implement 𝐅𝐨𝐜𝐚𝐥 𝐋𝐨𝐬𝐬 with γ = 2 to down-weight the easy negatives that are currently dominating the gradient.\"\n\n#MachineLearning #DeepLearning #MLEngineering #AIEngineering #NeuralNetworks #ModelOptimization\n\n…ver más",
+    "postImage": "",
+    "postUrl": "",
+    "meta": {
+      "urn": "urn:li:activity:7399070555267723265"
+    }
+  },
+  {
+    "author": "Andriy Burkov",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAPP_0kBErCYUow5hv3YXMApvuHtkRhMXmM?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAPP_0kBErCYUow5hv3YXMApvuHtkRhMXmM",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E03AQEpDpcCfhwFvw/profile-displayphoto-shrink_100_100/B4EZXjmjTtH0AY-/0/1743280289335?e=1767830400&v=beta&t=Yl0bV-gYk2Wt5ZutSQebFR6v3dSbowjqcVf1GMjFkNE",
+    "authorHeadline": "PhD in AI, author of 📖 The Hundred-Page Language Models Book and 📖 The Hundred-Page Machine Learning Book",
+    "timestamp": "3 semanas",
+    "text": "This paper shows how to beat models with 671 billion parameters using just 7 million parameters on hard puzzle tasks. On the ARC-AGI reasoning benchmark, this tiny model achieves 45% accuracy compared to 15.8% for DeepSeek R1 and 34.5% for OpenAI's o3-mini. On extremely difficult Sudoku puzzles with only 1,000 training examples, it reaches 87% accuracy where the previous best method managed 55%.\n\nThe method treats problem-solving as iterative refinement. The network maintains a current answer and a separate \"reasoning\" state, then repeatedly updates both: reason about the problem, propose a better answer, reason again, improve further. A Sudoku solver might start with a partially filled grid, update some cells, then reason again about the new constraints—gradually correcting mistakes across up to 16 refinement cycles.\n\nThe core insight is that large models fail because they generate answers in one pass, so early mistakes cascade. Breaking the problem into iterative steps, even with far less computational power, proves more effective. Training takes hours on a single GPU instead of weeks on clusters, and the model fits in 28MB instead of terabytes.\n\nLet the article talk to you on ChapterPal: https://lnkd.in/e7aY5juJ\n\nDownload the PDF: https://lnkd.in/eGnzTphn\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E22AQF7G41juC3aHw/feedshare-shrink_480/B4EZqyPDPJKUAY-/0/1763926882443?e=1767830400&v=beta&t=NlSN5P5FTrZ-4wOOrIfaPnIAQpfV7U1s750uYHD9Qug",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7398445584891662336?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7398445584891662336%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7398445584891662336"
+    }
+  },
+  {
+    "author": "Raúl Castilla Bravo",
+    "profileUrl": "https://www.linkedin.com/in/ACoAADHV5GABMQxwPMSgQxFTSSiLZDQgfWE-z9k?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADHV5GABMQxwPMSgQxFTSSiLZDQgfWE-z9k",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D03AQFNDaasS-_N-g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727715231418?e=1767830400&v=beta&t=cD8zaEP1LFFgMW7KL5Xkxb4rJ_8AnuMx_7IQqjnY5Qw",
+    "authorHeadline": "Divulgo sobre IA y Software Development",
+    "timestamp": "1 mes",
+    "text": "S3 en local, gratis y sin cuenta de AWS.\n\nEl código es idéntico al que usas para AWS.\n\nSe llama MinIO. Si no lo conoces:\n🔺 Es una servicio de S3 Open Source.\n🔺 Compatible con la API de AWS y boto3.\n\nSolo necesitas tener Docker instalado.\n\nLo que haremos será:\n🔸 Levantar MinIO en local usando Docker.\n🔸 Abrir la consola de MinIO en la web.\n🔸 Conectar a MinIO desde Python.\n🔸 Crear un bucket en MinIO con la consola.\n🔸 Subir un fichero a MinIO con Python.\n\nLos pasos a seguir son:\n1️⃣ Crear el docker-compose.yml.\n2️⃣ Crear el .env con las variables de entorno.\n3️⃣ Levantar el contenedor de MinIO (Docker).\n4️⃣ Abrir la consola de MinIO.\n5️⃣ Crear un bucket desde la consola.\n6️⃣ Instalar la librería boto3 (Python).\n7️⃣ Crear un cliente de S3 (Python).\n8️⃣ Conectar con MinIO (Python).\n9️⃣ Subir datos (Python).\n🔟 Ver los datos desde la consola de MinIO.\n\nTe dejo en comentarios un repositorio de GitHub con todo el código 😉\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D1FAQHBEN26Z_NVeA/feedshare-document-cover-images_480/B4DZqircnwGQBM-/0/1763665893495?e=1766934000&v=beta&t=iY58mRX8-8kpzZzIT8a-eoPqN6b84BPncfbYrUyFDJ0",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7397544376417009665?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397544376417009665%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7397544376417009665"
+    }
+  },
+  {
+    "author": "Ville Tuulos",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAidhuUBSZGQfiBcWsW7MsnKJ-m7bB4ydXw?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAidhuUBSZGQfiBcWsW7MsnKJ-m7bB4ydXw",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C5603AQGueFyp5gYfPw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1540362579960?e=1767830400&v=beta&t=K3m4wKcN6guaKHM4VEH-CtEzdPt7V1DbhjhVxXZYE1I",
+    "authorHeadline": "CEO & Co-Founder at Outerbounds",
+    "timestamp": "1 mes",
+    "text": "At Kubecon, Cloud Native Computing Foundation (CNCF) released their latest Technology Radar report about the state of AI/ML tooling.\n\nMetaflow received the highest ratings for Likelihood to Recommend, Maturity, and Usefulness, placing it solidly in the Adopt segment 🥇 🚀\n\nI’ve always believed that foundational open-source infrastructure like Metaflow requires a long-term, sustained commitment - move far, don't break things. I'm grateful to see that our efforts resonate with the community 🙇 \n\nLink to the full report in comments\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQHrozvHvv_kZw/feedshare-shrink_480/B56Zpz8cOUJwAY-/0/1762881816789?e=1767830400&v=beta&t=QUeE5UA6quWuq5Qx5yVn4fXALc8gV-0FCgEh-nrmu5g",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7394062259053891584?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7394062259053891584%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7394062259053891584"
+    }
+  },
+  {
+    "author": "Sidney Jones",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAABZ-i0Bj4N7tqsRavWF8RUl1Bj-zXidWhI?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAABZ-i0Bj4N7tqsRavWF8RUl1Bj-zXidWhI",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQGW7Y9vKqT6hQ/profile-displayphoto-scale_100_100/B56ZntoL6NHUAc-/0/1760628362237?e=1767830400&v=beta&t=my9BZszzMm8kJ4Lyv7nj6pvq3s0YZdki90YYia4mROM",
+    "authorHeadline": "AI Researcher • DevOps Leader • GitHub Contributor • Technologist exploring AI-Driven Architecture, Orchestration & Clean Code Systems",
+    "timestamp": "1 mes",
+    "text": "💡 DeepSeek-OCR: Vision+LLM Fusion for Context Compression\n\nWhile most of the world is focused on LLM scaling, DeepSeek-OCR is quietly tackling a different problem — token efficiency.\n\nWhat it is:\n\n 🧠 An open-source model (“deepseek-ai/DeepSeek-OCR”) combining visual encoders + language decoders to compress long contexts through vision-based representation.\n\n ⚙️ 3B parameter architecture; open on GitHub & Hugging Face.\n\n 📉 Reported to achieve 5–8× (sometimes up to 20×) token savings by fusing visual perception with text recognition.\n\nWhy it matters:\n\n- If your workflows involve archived videos, scanned docs, transcripts, or multimodal retrieval — DeepSeek-OCR could slash compute costs and speed up RAG pipelines.\n\n- For enterprise SaaS builders, a context-compression layer like this can be a differentiator — faster processing, smaller payloads, lower API bills.\n\n- In creative pipelines (think video remastering, dance-studio content, YouTube transcripts), you could extract structured insights from visuals with minimal token waste.\n\nCaveats to test before adoption:\n\n ⚠️ At maximum compression (~20×), accuracy can drop (down to ~60%).\n\n ✅ Optimal zone: <10× compression, ~97% accuracy (per Tom’s Hardware tests).\n 🔍 Enterprise deployment still requires GPU infra, quantization, and licensing checks for commercial use.\n\nAction Pointer:\n\nRun your own benchmark — compare DeepSeek-OCR’s compressed output vs your current OCR + embedding pipeline. Measure:\n⏱ Latency\n💰 Token cost\n📊 Accuracy\n\nIf the numbers hold, this could be a cornerstone for low-cost multimodal AI pipelines — and a signal that context compression may soon become as crucial as model scaling.\n\n#DeepSeekOCR\n #ArtificialIntelligence\n #ComputerVision\n #LargeLanguageModels\n #MultimodalAI\n #ContextCompression\n #VisionLanguageFusion\n #LLMOptimization\n #OpenSourceAI\n #TokenEfficiency\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQFTcC9yxoOMKg/feedshare-shrink_480/B56Zpd.G3pKAAc-/0/1762513153844?e=1767830400&v=beta&t=G2R9eRU8vfu6ClSwFNRh5odPFnImenxH9kjjOVqdbwE",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7392515975889395712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7392515975889395712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7392515975889395712"
+    }
+  },
+  {
+    "author": "Sumanth P",
+    "profileUrl": "https://www.linkedin.com/in/ACoAACkphDcBDruPBdXiAnqyc834jkTkd_4kRnU?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACkphDcBDruPBdXiAnqyc834jkTkd_4kRnU",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQGhh7byBtlnxA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728913891497?e=1767830400&v=beta&t=pSFis3-l1PEDxrQL4vlT9sb8XauStnVDqjAGmS_-HS0",
+    "authorHeadline": "Machine Learning Developer Advocate | LLMs, AI Agents & RAG | Shipping Open Source AI Apps | AI Engineering",
+    "timestamp": "1 mes",
+    "text": "Turn your laptop into a powerful RAG system!\n\nLEANN can index and search through millions of documents while using 97% less storage than traditional solutions without accuracy loss.\n\nLEANN achieves this through graph-based selective recomputation with high-degree preserving pruning, computing embeddings on-demand instead of storing them all.\n\nKey Features:\n\n🔒 Privacy: Everything stays on your laptop with no cloud and no hidden terms.\n🪶 Lightweight: Smart graph pruning and CSR format cut down both storage and memory usage.\n📦 Portable: Move your knowledge base across devices or share it with others at minimal cost.\n📈 Scalable: Handles messy personal data and agent-generated memory that often crash traditional vector DBs.\n✨ Accurate: Provides the same search quality as heavyweight solutions while using 97% less storage.\n\nIt's 100% Open Source\n\nLink to the Github Repo in the comments!\n_____\n♻️ Share this with your network if you found this insightful \n➕ If you’re into ML, LLMs, and AI agents, join AI Engineering (it’s free): https://lnkd.in/gP2bSzGZ\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQFeK9tY6Ggxtw/feedshare-shrink_480/B56ZpjJm.cHQAY-/0/1762600056829?e=1767830400&v=beta&t=eTk4wJ91OJvGkmlQn6Zv2KX62XycFH67rPux-NvCGCw",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7392880473779322880?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7392880473779322880%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7392880473779322880"
+    }
+  },
+  {
+    "author": "Software Architecture Guild",
+    "profileUrl": "https://www.linkedin.com/company/software-architecture-guild/",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D0BAQECWTJEKB8wIw/company-logo_100_100/B4DZXZMbsLHYAQ-/0/1743105670348/software_architecture_guild_logo?e=1767830400&v=beta&t=cXyIDsomGQZTSY9eCQGfoL8txTnBGTeFIhaUHGoxnMA",
+    "authorHeadline": "3 mil seguidores",
+    "timestamp": "1 mes",
+    "text": "👉 Architecture Fundamentals 👈\n💬 I’m building a practical guide for working architects. I've consolidated the core fundamentals into one place, and I would appreciate your opinions.\nBefore you start drawing solutions, read this. This section walks you through how to read a system, choose an architecture style, model it, run the process, and see a complete example.\n\n1️⃣ Understanding Architecture\nWhat architecture is (and isn’t), how it differs from design, and how structure, behavior, and qualities sit under real-world constraints.\n2️⃣ Architecture Characteristics\nThe “-ilities” (such as performance, scalability, and security) are treated as primary forces that shape decisions and trade-offs. These are how you defend choices.\n3️⃣ Architecture Styles\nMonolith, microservices, event-driven, service-oriented, etc. You get strengths, weaknesses, and when each style actually fits your needs instead of copy/paste hype.\n4️⃣ Visualizing Architecture\nHow to communicate architecture with views and viewpoints so that different stakeholders see what matters to them — structure, runtime behavior, and qualities. Think “multiple lenses,” not one diagram.\n5️⃣ Architecture Process\nHow architecture is produced: decisions, trade-offs, stakeholder concerns, alignment with business goals. This treats architecture as a repeatable process, not an act of inspiration.\n6️⃣ Sample Architecture\nA complete, end-to-end example: description, high-level views, decisions. So you can see what “this is our architecture” actually looks like in practice.\n\n📌 Takeaway\nThis is the starting point for doing architecture like an engineer, not a stylist. Read the Fundamentals section and pressure-test your own system against it.\n\nRead the guide to learn more: https://lnkd.in/dHnp3Q64\n\n#SoftwareArchitectureGuild #softwarearchitecture #systemdesign #engineeringmanagement\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/sync/v2/D4D27AQGyhU2y39IQ2A/articleshare-shrink_1280_800/B4DZpdd3jsHwAQ-/0/1762504702522?e=1766934000&v=beta&t=2iI8IOp0MdF_4lOzlqdvqHsCULffoT8hk2E8u5EAuv8",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7392480592648458240?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7392480592648458240%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7392480592648458240"
+    }
+  },
+  {
+    "author": "Ivan Sekulić",
+    "profileUrl": "https://www.linkedin.com/in/ACoAACbsPWEBpodNjy0MJ5q9QpEICaODCfNAo5I?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACbsPWEBpodNjy0MJ5q9QpEICaODCfNAo5I",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C4D03AQFY81nXPpUgbQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1634543011428?e=1767830400&v=beta&t=Gpmr3KMSFO5eboeNZNNRzH1GmTVAhbmGknL9ESq7XOk",
+    "authorHeadline": "Head of Recruitment",
+    "timestamp": "1 mes",
+    "text": "🚨🚨🚨 URGENT 🚨🚨🚨\n\nMOV3UP's client is urgently looking for a Senior Backend Engineer that is specialised in Python (ideally FastAPI framework).\n\nOur client is a fast-growing AI-first startup operating in multiple countries with a userbase counting over 50 million users. They’re developing a B2C Personal Intelligent Assistant app powered by AI to enhance productivity and simplify daily tasks.\n\nSee for more: https://lnkd.in/eBRQMk9t\n\nReach out and let's discuss it.\n\nivan@mov3up.com\n\n#python #backend #fastapi #startup\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D22AQHpCFHygnxxNw/feedshare-shrink_480/B4DZor3rUoJMAY-/0/1761672607578?e=1767830400&v=beta&t=hUKyNst6DX086LCC3DfQvaGsrrjQPGv8mC5PTu4-knQ",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7389590957840674816?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7389590957840674816%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7389590957840674816"
+    }
+  },
+  {
+    "author": "Belén González Fernández",
+    "profileUrl": "https://www.linkedin.com/in/ACoAACNX4KABzJAgIOVPHT_zemHg54rRuiRoDUQ?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACNX4KABzJAgIOVPHT_zemHg54rRuiRoDUQ",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D03AQEIUSm6dCHPRg/profile-displayphoto-shrink_100_100/B4DZSxdePgGcAU-/0/1738144081802?e=1767830400&v=beta&t=p2oYuHcTcbUfJ6QarPAUkWn6CrRaFKE69pAsgm-Qb7I",
+    "authorHeadline": "Ayudo a profesionales de TECH a reinventar su carrera con propósito y conseguir su próximo gran empleo I Career Coach | @belengonzalezcoach👇🏼",
+    "timestamp": "1 mes",
+    "text": "Si buscas trabajo remoto en 2025. Guarda este post. \n\nEs el más completo que vas a ver hoy👇\n\nPLATAFORMAS GENERALES\n ↳ FlexJobs → Empleos remotos filtrados, cero estafas.\n ↳ We Work Remotely → Startups top y tecnología.\n ↳ Remote. co → Empresas remote-first reales.\n ↳ Himalayas → Transparencia total: sueldos, cultura y tech stack.\n ↳ Jobgether → Filtros por país, idioma y flexibilidad.\n ↳ SkipTheDrive → De marketing a legal: hay de todo.\n ↳ Virtual Vocations → Muy fuerte en EEUU, pero hay globales.\n\nSECTOR TECH Y FREELANCE\n ↳ Arc. dev → Si eres dev, esta es tu liga.\n ↳ RemoteOK → Todo lo nuevo aparece aquí primero.\n ↳ Wellfound (AngelList) → Startups que buscan perfiles con iniciativa.\n ↳ 4 Day Week → ¡Sí, jornadas de 4 días!\n ↳ Contra → Visual, directa y sin comisiones.\n ↳ Hubstaff Talent → Freelance tech sin intermediarios.\n\nAGREGADORES \n ↳ Remotive → Comunidad + ofertas reales.\n ↳ DailyRemote → Actualizado cada día.\n ↳ Jobspresso → Tech, marketing y soporte.\n ↳ Working Nomads → Si sueñas con trabajar desde cualquier parte.\n ↳ Career Vault → Buscador limpio, útil y categorizado.\n\nEMPRESAS QUE CONTRATAN REMOTO EN 2025\n ↳ Automattic → WordPress y WooCommerce, 100% remoto.\n ↳ GitLab → Sin oficinas. Sin excusas.\n ↳ Hotjar → Flexibilidad real, equipo remoto por toda Europa.\n ↳ Buffer → Comunicación, equipo distribuido y cultura fuerte.\n ↳ Typeform → Diseño y UX desde Barcelona al mundo.\n ↳ Moodle → Educación global, base en España.\n ↳ Qonto y N26 → Fintechs europeas con equipos distribuidos.\n\nTIPS ACTUALES PARA CONSEGUIR EMPLEO REMOTO\n ✔ Personaliza tu CV y aplica directo en web.\n ✔ Habla con empleados en LinkedIn (no solo RRHH).\n ✔ Usa Notion o Teal HQ para gestionar tus candidaturas.\n ✔ Trabaja tu marca personal: te abrirá puertas que ni imaginas.\n\n¿Conoces alguna otra que deberíamos sumar?\n\n 🙌Comenta y ayudemos entre todos a quienes están buscando libertad laboral en 2025.\n\nPD: Si te sirvió este post, guárdalo o compártelo con alguien que esté buscando trabajo remoto.\n\nPD.1: En comentarios te dejo 8 Consejos para hacerte visible en LinkedIn en 30 minutos.\n…ver más",
+    "postImage": "",
+    "postUrl": "",
+    "meta": {
+      "urn": "urn:li:activity:7388452786037768192"
+    }
+  },
+  {
+    "author": "LangChain",
+    "profileUrl": "https://www.linkedin.com/company/langchain/",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D560BAQFo2IrXO1-LCg/company-logo_100_100/B56ZoB_xEeJsAQ-/0/1760970084952/langchain_logo?e=1767830400&v=beta&t=KZxOzJkgHySRX-VqshHGz29iNzcxK0sUx_h8kkS81RE",
+    "authorHeadline": "477 mil seguidores",
+    "timestamp": "2 meses",
+    "text": "🧠 OpenMemory: AI Memory Engine\n\nAn open-source memory system enhancing LLM apps through LangGraph integration. Features structured memory with 2-3× faster recall and 10× lower costs than hosted solutions.\n\nCheck it out 🔍\nhttps://lnkd.in/gg7G_iXt\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQH7v_jb7QZCew/feedshare-shrink_480/B56ZocGSVSH8AY-/0/1761408002234?e=1767830400&v=beta&t=PBs3M4-SGL0RIfmBV2lixYjvf2eD-mygGz7CpuhgD9k",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7387880630220541952?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7387880630220541952%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7387880630220541952"
+    }
+  },
+  {
+    "author": "Paul Iusztin",
+    "profileUrl": "https://www.linkedin.com/in/ACoAACQFQWgBqowPZBqBQgSC3ATmuatVfZkf6fE?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACQFQWgBqowPZBqBQgSC3ATmuatVfZkf6fE",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D03AQGFe8xEuUs6yw/profile-displayphoto-scale_100_100/B4DZjIK3FmGkAc-/0/1755704947520?e=1767830400&v=beta&t=VnBsLvfdOc3pgHxFAn75SWQ7ANOIVStfxH046L5UYQk",
+    "authorHeadline": "Senior AI Engineer • Founder @ Decoding AI • Author @ LLM Engineer’s Handbook ~ I ship AI products and teach you about the process.",
+    "timestamp": "2 meses",
+    "text": "I am flying to San Francisco. This is the reading list for my 12-hour flight on AI Evals, Knowledge Graphs, LLMOps and Context Engineering I never had time to dig into.\n\nNow I have no other choice. \n\nHere we go:\n\nI will start with the LLMOps book by Abi Aryan ☯︎, which is probably one of the best on the topic. This one will keep me busy for a while.\n\nNext, I will move on to some articles on evaluating RAG systems by Jason Liu:\n• There are only 6 RAG Evals: https://lnkd.in/digtBsDV\n• Levels of Complexity: RAG Apps: https://lnkd.in/dCNpctJN\n\nNow, moving to one of my latest fantasies, Knowledge Graphs:\n• How to Implement Graph RAG Using Knowledge Graphs and Vector Databases: https://lnkd.in/dR2m7TpU\n• How to Build a Graph RAG App: https://lnkd.in/d_pHeu2p\n• How to Implement Knowledge Graphs and LLMs at the Enterprise Level: https://lnkd.in/djMmu33b\n• Primers • Graph Neural Networks: https://lnkd.in/dXZibfby\n• Recommendation Systems • Graph Neural Networks: https://lnkd.in/dNwKupPg\n\nOther must-reads for AI Engineers:\n• Effective context engineering for AI agents: https://lnkd.in/dknFHeRF\n• From Notebooks to Production Server: Build AI Applications The Right Way: https://lnkd.in/d2e6WtCk (amazing piece on applying the clean architecture to AI projects by Jeremy Arancio)\n• Digging more into the nitty-gritty details of MCP. Nothing beats the FastMCP docs by Prefect on that.\n• Defeating Nondeterminism in LLM Inference: https://lnkd.in/dwmgCDrr\n\nHow do I read this on a plane? Readwise Reader is an amazing app that lets you store your reading list offline while taking notes.\n\nProbably won’t have time to read everything, but I like making lists. \n\nSo here you go. Enjoy!\n\nWhat else would you add on AI Evals, KG or LLMOps?\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D22AQGjcFPb2OqfXQ/feedshare-shrink_480/B4DZoMyIMMJcAY-/0/1761151059805?e=1767830400&v=beta&t=0LC9G-Nzd5IWmO4clEkfubVCZ4v_KMGxRkGQ7HpCrbw",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7386802940172308480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7386802940172308480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7386802940172308480"
+    }
+  },
+  {
+    "author": "Vaibhav Srivastav",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAByTX7UBK8s_Cqa76oX2vI4LckCiWMaVNZI?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAByTX7UBK8s_Cqa76oX2vI4LckCiWMaVNZI",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4D03AQEQq6BxsNE6nA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1668699790008?e=1767830400&v=beta&t=bcJtwTDEbHHfLGTMBNqHgQ1h8hfwCG31Uikm1tZEYV4",
+    "authorHeadline": "ex Head of DX @ Hugging Face",
+    "timestamp": "2 meses",
+    "text": "Kudos to OpenAI team for their guide on what makes documentation good - it's brilliant! 🥳\n\nFew gems that stood out:\n> Make docs easy to skim → clear titles, short paras, bullets & bold text\n> Write simply → cut jargon, avoid abbreviations, explain even “obvious” steps\n> Be broadly helpful → docs aren’t just for experts, they’re for everyone\n> Prioritise value → solve common problems first, avoid teaching bad habits\n\n> Above all: docs are an act of empathy ❤️\n\nIf you care about Developer Experience, you should give it a read!\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQFVa5rFtKgiMw/feedshare-shrink_480/B56ZoChRz6J8AY-/0/1760978873528?e=1767830400&v=beta&t=tTefwDYXE2UYbTTaqnO5etACL_BSe2d4MmXMVegd4pI",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7386080741442408448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7386080741442408448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7386080741442408448"
+    }
+  },
+  {
+    "author": "Alejandro Saucedo",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAjS6gQByF9jD0BrsOqiPoWCN52pxZiGaN0?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAjS6gQByF9jD0BrsOqiPoWCN52pxZiGaN0",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D4E03AQFnLHnC51IgFw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1721631552097?e=1767830400&v=beta&t=CHQ5uwDSkg99wiStsWpECT-FmjJPLAUfl-b7MoMqRnk",
+    "authorHeadline": "AI & Tech Executive @ Zalando | Advisor @ UN, EU, ACM, etc | Join 70k+ ML Newsletter",
+    "timestamp": "2 meses",
+    "text": "Anthropic’s new Claude Skills system released last week may be more transformative than the MCP craze due to a few advantages: \n\nClaude Skills are opening more possibilities for lightweight, modular extensions to LLMs using simple Markdown files and optional scripts that Claude can load directly. \n\nThese \"skills\" let models perform specialized tasks efficiently within a coding environment, which significantly reduces token overhead and complexity compared to MCP's heavy protocol structure. \n\nAlthough it can be argued that these two frameworks can be compatible / interchangeable in the future, it is interesting to see this wild-wild west of competing approaches to find the global optimal. \n\nThis is a great write-up by Simon Willison which summarises both the advantages as well as some practical examples. \n\nSimon Willison's Deep Dive: https://lnkd.in/eD4rMh7M \nAnthropic Announcement: https://lnkd.in/eXYg6Tne \n\n--\n\nIf you liked this post you can join 70,000+ practitioners for weekly tutorials, resources, OSS frameworks, and MLOps events across the machine learning ecosystem: https://lnkd.in/eRBQzVcA\n\n#ML #MachineLearning #ArtificialIntelligence #AI #MLOps #AIOps #DataOps #augmentedintelligence #deeplearning #privacy #kubernetes #datascience #python #bigdata\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4E10AQG_6WRc585rGQ/image-shrink_480/B4EZoAT6RKHMAk-/0/1760941812489?e=1766934000&v=beta&t=-wMqF5eG35TdCjgV_BVDedI9N4gMmRLIvztLNzvz4Ck",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7385925387102392320?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7385925387102392320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7385925387102392320"
+    }
+  },
+  {
+    "author": "Andrew Ng",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAqBL5gBXJ8MGhQh-qHYyxAOW-DYlHM3VLg?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAqBL5gBXJ8MGhQh-qHYyxAOW-DYlHM3VLg",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C5603AQF8paxRmnuJxg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517556809568?e=1767830400&v=beta&t=jMUdzhnn05fdO6zor2w-fpHF6ZzNXNNXbRqO3SykeOQ",
+    "authorHeadline": "Founder of DeepLearning.AI; Managing General Partner of AI Fund; Exec Chairman of LandingAI",
+    "timestamp": "2 meses",
+    "text": "Learn to build your own voice-activated AI assistant that can execute tasks like gathering recent AI news from the web, scripting out a podcast, and using tools to put all that into a multi-speaker podcast. See our new short course: \"Building Live Voice Agents with Google’s ADK (Agent Development Kit),” taught by Google’s Lavi Nigam and Sita Lakshmi Sangameswaran. \n\nADK provides modular components that make it easy to build and debug agents. It also includes a built-in web interface for tracing agentic reasoning. This course illustrates these concepts via building a live voice agent that can chain actions to complete a complex task like creating a podcast. This requires maintaining context, implementing guardrails, reasoning, and handling audio streaming, while keeping latency low.\n\nYou’ll learn to:\n- Build voice agents that listen, reason, and respond\n- Guide your agent to follow a specific workflow to accomplish a task\n- Coordinate specialized agents to build an agentic podcast workflow that researches topics and produces multi-speaker audio\n- Understand how to deploy an agent into production\n\nEven if you’re not yet building voice systems, you'll find understanding how realtime agents stream data and maintain reliability useful for designing modern agentic applications.\n\nPlease join here: https://lnkd.in/ga6tD5rt\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5605AQHqfNKgUl_f_Q/videocover-low/B56ZnozB3yKUCQ-/0/1760547319931?e=1766934000&v=beta&t=W0uQfw6N8hyqacX3RC4leX3itEKOGgfxKqhtvJCip-w",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7384270740805582848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7384270740805582848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7384270740805582848"
+    }
+  },
+  {
+    "author": "Om Nalinde",
+    "profileUrl": "https://www.linkedin.com/in/ACoAADKnyD0BmPc_iOJu58cnenlm5DCGPJtTP9k?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADKnyD0BmPc_iOJu58cnenlm5DCGPJtTP9k",
+    "authorImage": "https://media.licdn.com/dms/image/v2/D5603AQEsXJTdIUsnYg/profile-displayphoto-scale_100_100/B56ZjoAlqvHMAk-/0/1756239126696?e=1767830400&v=beta&t=aGb3eo5i4EbnPtW6BSwefFytgdCU6YafodoVmY_hvJc",
+    "authorHeadline": "Building and Teaching AI Agents | CS @IIIT",
+    "timestamp": "2 meses",
+    "text": "🚨 BREAKING: 400,000 GPU hours later, Meta figured out why your RL training hits a wall.\n\nThe Big Problem They Solved:\n\n> RL training felt unpredictable. Meta ran 400,000+ GPU hours of experiments and found it actually follows predictable sigmoid curves – if you know what to measure.\n\nWhy This Matters: \n\n> Predict success early – Test if your approach will scale using 1/6th the compute\n> Stop wasting resources – Some methods look good early but hit ceilings fast\n> Clear recipe exists – ScaleRL combines PipelineRL, CISPO loss, FP32 precision, smart filtering. Nothing novel, just done right.\n\nCounterintuitive Findings:\n\n> Bigger batches look worse initially but win at scale\n> Most tweaks (curriculum, normalization) just affect speed\n> Loss type and precision? Actually change your performance ceiling\n> Interruptions beat length penalties\n\nThe Results: \n\n> They scaled to 100k GPU hours and performance matched predictions from 50k. The extrapolation held across larger models (17B×16 MoE), longer context (32k tokens), and multi-task training.\n\nBottom Line:\n\n> Focus on asymptotic performance (A) first, efficiency (B) second. Use their sigmoid fitting to predict scalability early.\n> Or just start with ScaleRL – they did the hard work.\n> This turns RL scaling from alchemy into engineering.\n\nPaper: arxiv.org/abs/2510.13786\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D4D22AQEwgV4gS2GNNw/feedshare-shrink_480/B4DZn01LQrIgAc-/0/1760749206387?e=1767830400&v=beta&t=vxmWzY9i7WkjfSstlUdh4_oJTHFlAKJ6uSyAuc7YHMc",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7385155668967714816?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7385155668967714816%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7385155668967714816"
+    }
+  },
+  {
+    "author": "Sebastian Raschka, PhD",
+    "profileUrl": "https://www.linkedin.com/in/ACoAAAxqHaUBEa6zzXN--gv-wd8ih0vevPvr9eU?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAxqHaUBEa6zzXN--gv-wd8ih0vevPvr9eU",
+    "authorImage": "https://media.licdn.com/dms/image/v2/C4E03AQHVyH-IfD1KbQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1629877234109?e=1767830400&v=beta&t=YgaS5E-NJ6kL-EXqxqkZ3QjI1DtIjrx9qB9kZm0dkbc",
+    "authorHeadline": "ML/AI research engineer. Author of Build a Large Language Model From Scratch (amzn.to/4fqvn0D) and Ahead of AI (magazine.sebastianraschka.com), on how LLMs work and the latest developments in the field.",
+    "timestamp": "2 meses",
+    "text": "Chapter 3 on building a symbolic verifier for LLMs from scratch is now live: https://mng.bz/lZ5B. And with this, the first 176 pages of Build A Reasoning Model (From Scratch) are now available.\n\nThis verifier is a useful method for evaluating LLMs. It's one of the more useful evaluation methods in our repertoire. In addition, it also doubles as an important component for reinforcement learning, which has become a cornerstone of LLM training in 2025. (But more on that in future chapters.)\n…ver más",
+    "postImage": "https://media.licdn.com/dms/image/v2/D5622AQEIMtNrHv-hjg/feedshare-shrink_480/B56ZntRjc2IsAc-/0/1760622429446?e=1767830400&v=beta&t=L1SUItCTrlSwYPbwTNIXUMHTbOVfe0GfJ8yN96Qqlt4",
+    "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7384585708591599616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7384585708591599616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "meta": {
+      "urn": "urn:li:activity:7384585708591599616"
+    }
+  }
+]

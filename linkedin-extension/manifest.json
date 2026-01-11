@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Saved Posts Exporter",
+  "version": "1.0",
+  "description": "Export saved LinkedIn posts to a JSON file.",
+  "permissions": ["downloads", "activeTab", "scripting", "tabs"],
+  "host_permissions": [
+    "https://www.linkedin.com/my-items/saved-posts/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Export LinkedIn Saved Posts"
+  }
+}

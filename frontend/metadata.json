@@ -1,0 +1,5 @@
+{
+  "name": "LinkedIn Insight Hub",
+  "description": "A sophisticated analytics platform for LinkedIn content. Upload post JSONs, search through feeds, and visualize author influence, word clouds, and content projections.",
+  "requestFramePermissions": []
+}
