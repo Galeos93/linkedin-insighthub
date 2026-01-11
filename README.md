@@ -37,7 +37,7 @@ Before getting started, ensure you have the following installed:
 
 ## Installation & Usage
 
-![Demo](/demo.mp4)
+[▶ Download the demo video](/demo.mp4)
 
 ### 1. Install the LinkedIn Extension (Local)
 
