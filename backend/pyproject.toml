@@ -5,7 +5,6 @@ description = "A project to visualize LinkedIn saved posts using embeddings and 
 authors = ["Your Name <you@example.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "linkedin_insighthub" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"

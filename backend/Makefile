@@ -1,6 +1,18 @@
 IMAGE_NAME ?= galeos93/linkedin-insight-hub-backend
 TAG ?= latest
 
+install:
+	@echo "📦 Installing dependencies..."
+	poetry install --no-root
+
+run: install ## Run the application
+	@echo "🚀 Running the application..."
+	poetry run python -m main
+
+test:
+	@echo "🧪 Running tests..."
+	poetry run pytest tests/
+
 docker-build: ## Build Docker image
 	@echo "🐳 Building Docker image..."
 	docker build -f docker/Dockerfile -t $(IMAGE_NAME):$(TAG) .
