@@ -62,7 +62,7 @@ class SimpleWordCloudProjector(PostWordCloudProjector):
         # Collect stopwords from all specified languages, or all if languages is None
         all_stopwords = self._compute_stopwords(self.languages)
 
-        if self.format not in WordCloudFormat:
+        if self.format.value not in {f.value for f in WordCloudFormat}:
             raise ValueError(
                 f"Unsupported format: {self.format}. Allowed formats are:"
                 f" {[f.value for f in WordCloudFormat]}"
