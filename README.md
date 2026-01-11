@@ -37,6 +37,8 @@ Before getting started, ensure you have the following installed:
 
 ## Installation & Usage
 
+[▶ Watch the demo video](/demo.webm)
+
 ### 1. Install the LinkedIn Extension (Local)
 
 1. Open your browser and navigate to:
