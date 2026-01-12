@@ -246,7 +246,7 @@ build/
 .tmp/
 
 # Playground folder
-.playground/
+./backend/playground/
 
 # Todo.md
 todo.md

@@ -38,7 +38,7 @@ class AppBuilder:
         app.post("/users/me/posts")(self.save_posts_api.save_posts)
 
     def register_get_post_routes(self, app: FastAPI):
-        app.get("/users/me/posts/{post_id}")(self.get_posts_api.get_post)
+        app.get("/users/me/posts/{id}")(self.get_posts_api.get_post)
 
     def register_get_posts_routes(self, app: FastAPI):
         app.get("/users/me/posts")(self.get_posts_api.get_posts)
@@ -82,6 +82,8 @@ class AppBuilder:
             self.register_save_posts_routes(app)
         if self.get_posts_api:
             self.register_get_posts_routes(app)
+        if self.get_posts_api:
+            self.register_get_post_routes(app)
 
 
         app.add_middleware(
